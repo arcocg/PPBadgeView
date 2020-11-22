@@ -220,6 +220,7 @@ extension UIView {
                 self.addSubview(badgeControl)
                 self.bringSubviewToFront(badgeControl)
                 self.badgeView = badgeControl
+                self.badgeView.isUserInteractionEnabled = false
                 self.addBadgeViewLayoutConstraint()
                 return badgeControl
             }
